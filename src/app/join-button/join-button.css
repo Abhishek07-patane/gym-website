@@ -1,0 +1,21 @@
+.btn {
+  background: #ff4c29;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e63900;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}

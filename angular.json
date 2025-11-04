@@ -22,10 +22,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              {
+                   "glob": "3d-gym-equipment.jpg",
+                 "input": "./",
+                 "output": "./"
+                }
             ],
             "styles": [
               "src/styles.css"
+          
             ]
           },
           "configurations": {

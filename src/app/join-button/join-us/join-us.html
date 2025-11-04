@@ -1,0 +1,27 @@
+<div class="main">
+    <app-navbar></app-navbar>
+
+<div class="join-container">
+  <h1>Join Our Gym Family 💪</h1>
+  <p>Start your fitness journey with the best trainers and facilities.</p>
+
+  <form (ngSubmit)="submitForm()" class="join-form">
+    <input type="text" placeholder="Full Name" [(ngModel)]="name" name="name" required />
+    <input type="email" placeholder="Email Address" [(ngModel)]="email" name="email" required />
+    <input type="tel" placeholder="Phone Number" [(ngModel)]="phone" name="phone" required />
+
+    <select [(ngModel)]="plan" name="plan" required>
+      <option value="" disabled selected>Select Membership Plan</option>
+      <option value="Basic">Basic - ₹999/month</option>
+      <option value="Standard">Standard - ₹1,499/month</option>
+      <option value="Premium">Premium - ₹1,999/month (Includes Personal Trainer)</option>
+    </select>
+
+    <button type="submit" class="join-btn">Join Now</button>
+  </form>
+
+  <p class="success" *ngIf="successMessage">{{ successMessage }}</p>
+
+  <button class="home-btn" routerLink="/">⬅ Back to Home</button>
+</div>
+</div>

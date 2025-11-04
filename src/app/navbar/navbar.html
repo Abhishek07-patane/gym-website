@@ -1,0 +1,8 @@
+<div class="navbar">
+  <div class="logo">Worrier</div>
+  <ul class="menu">
+    <li *ngFor="let item of menuItems">
+      <a [routerLink]="getLink(item)" routerLinkActive="active">{{ item }}</a>
+    </li>
+  </ul>
+</div>
